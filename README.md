@@ -2,14 +2,14 @@
 
 ## Instruksjoner
 
-Klon dette prosjektet, kjør
+For å klone dette prosjektet, så kjører du disse kommandoene:
 
 ```sh
 git clone git@github.com:ohbergan/discord.js-bot-template.git
 cd discord.js-bot-template
 ```
 
-Installer alle node moduler
+Installer alle node moduler ved å kjøre denne kommandoen
 
 ```sh
 npm install
@@ -27,13 +27,13 @@ Lag en `config.json` fil, bruk følgende mal og fyll ut informasjonen
 
 ## Bruk
 
-For å oppdatere kommandoene, kjør
+For å oppdatere kommandoene så kjører du denne kommandoen
 
 ```sh
 node deploy-commands.js
 ```
 
-For å starte roboten, kjør
+For å starte roboten din så kjører du denne kommandoen
 
 ```sh
 node index.js
