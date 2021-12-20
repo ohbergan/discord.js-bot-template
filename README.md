@@ -20,8 +20,7 @@ Lag en `config.json` fil, bruk følgende mal og fyll ut informasjonen
 ```json
 {
 	"token": "",
-	"clientId": "",
-	"guildId": ""
+	"clientId": ""
 }
 ```
 

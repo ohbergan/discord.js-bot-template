@@ -1,9 +1,14 @@
+// Hent filservice
 const fs = require('fs');
+// Hent Discord.JS moduler
 const { Client, Collection, Intents } = require('discord.js');
+// Hent bot token
 const { token } = require('./config.json');
 
+// Lag en ny klient, altså start botten
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
+// Lag en mappe med kommandoer
 client.commands = new Collection();
 const commandFiles = fs.readdirSync('./commands').filter((file) => file.endsWith('.js'));
 
@@ -12,6 +17,7 @@ for (const file of commandFiles) {
 	client.commands.set(command.data.name, command);
 }
 
+// Lag en mappe med eventer
 const eventFiles = fs.readdirSync('./events').filter((file) => file.endsWith('.js'));
 
 for (const file of eventFiles) {
@@ -23,6 +29,7 @@ for (const file of eventFiles) {
 	}
 }
 
+// Kjør kommandoen
 client.on('interactionCreate', async (interaction) => {
 	if (!interaction.isCommand()) return;
 
@@ -38,4 +45,5 @@ client.on('interactionCreate', async (interaction) => {
 	}
 });
 
+// La botten logge inn
 client.login(token);

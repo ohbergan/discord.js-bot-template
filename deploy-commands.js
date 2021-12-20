@@ -1,8 +1,12 @@
+// Hent Discord.JS moduler
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { clientId, guildId, token } = require('./config.json');
+// Hent botten sin klientID og token
+const { clientId, token } = require('./config.json');
+// Hent filservice
 const fs = require('fs');
 
+// Lag en liste med kommandoer
 const commands = [];
 const commandFiles = fs.readdirSync('./commands').filter((file) => file.endsWith('.js'));
 
@@ -11,8 +15,10 @@ for (const file of commandFiles) {
 	commands.push(command.data.toJSON());
 }
 
+// Koble til API
 const rest = new REST({ version: '9' }).setToken(token);
 
+// Last opp kommandoene
 (async () => {
 	try {
 		console.log('Started refreshing application (/) commands.');
