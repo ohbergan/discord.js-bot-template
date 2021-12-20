@@ -24,9 +24,6 @@ Lag en `config.json` fil, bruk følgende mal og fyll ut informasjonen. Du kan la
 }
 ```
 
-Inviter botten ved å gå hit:
-https://discord.com/api/oauth2/authorize?client_id=DIN_APPLICATION_ID&permissions=0&scope=bot%20applications.commands
-
 ## Bruk
 
 For å oppdatere kommandoene så kjører du denne kommandoen
@@ -34,6 +31,9 @@ For å oppdatere kommandoene så kjører du denne kommandoen
 ```sh
 node deploy-commands.js
 ```
+
+Inviter botten ved å gå hit:
+https://discord.com/api/oauth2/authorize?client_id=DIN_APPLICATION_ID&permissions=0&scope=bot%20applications.commands
 
 For å starte roboten din så kjører du denne kommandoen
 
