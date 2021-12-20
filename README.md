@@ -15,7 +15,7 @@ Installer alle node moduler ved å kjøre denne kommandoen
 npm install
 ```
 
-Lag en `config.json` fil, bruk følgende mal og fyll ut informasjonen
+Lag en `config.json` fil, bruk følgende mal og fyll ut informasjonen. Du kan lage klient id og token her: https://discord.com/developers/applications
 
 ```json
 {
