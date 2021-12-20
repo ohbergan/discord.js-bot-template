@@ -5,7 +5,7 @@
 For å klone dette prosjektet, så kjører du disse kommandoene:
 
 ```sh
-git clone git@github.com:ohbergan/discord.js-bot-template.git
+git clone https://github.com/ohbergan/discord.js-bot-template
 cd discord.js-bot-template
 ```
 
